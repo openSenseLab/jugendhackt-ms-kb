@@ -115,3 +115,29 @@ fetch('http://localhost:3000/todos', {
 Das war's! Du hast jetzt den JSON-Server erfolgreich eingerichtet und kannst JSON-Daten speichern, abrufen und aktualisieren. Viel Spaß beim Experimentieren und Erstellen deiner eigenen APIs!
 
 
+### HTML/API
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Marios Todo Liste</h1>
+<p id="todo"></p>
+<button onclick="fetchApi()">Zeige Todos</button>
+
+</body>
+<script>
+function fetchApi() {
+    fetch('http://localhost:3000/todos/1')
+    .then(response => response.json())
+    .then (json => document.getElementById("todo").innerHTML = json.task)
+   
+}
+</script>
+</html>
+
+```
