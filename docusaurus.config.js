@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Jugend hackt Lab Münster',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -64,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Jugend hackt Lab Münster',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -97,19 +97,15 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Links',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Jugend hackt',
+                href: 'https://jugendhackt.org',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'openSenseLab',
+                href: 'https://opensenselab.org',
               },
             ],
           },
@@ -127,7 +123,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Jugend hackt Lab Münster, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
