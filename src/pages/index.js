@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Knowledge Base vom Jugend hackt Lab Münster">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
