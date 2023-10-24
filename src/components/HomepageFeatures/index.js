@@ -18,7 +18,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Alle Anleitungen sind an einem Ort. Du musst nicht mehr lange suchen, um die Anleitungen und Info zu finden, die du brauchst.
+        Alle Anleitungen sind an einem Ort. Du musst nicht mehr lange suchen, um die Anleitungen und Infos zu finden, die du brauchst.
       </>
     ),
   },
@@ -27,7 +27,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Fehlt dir eine Anleitung? Dann erstelle gerne eine Eigene über das Github Repository: <Link to="https://github.com/openSenseLab/jugendhackt-ms-kb">Zum Repository</Link>
+        Fehlt dir eine Anleitung? Dann erstelle gerne eine eigene Anleitung oder ein Issue  über das Github Repository: <Link to="https://github.com/openSenseLab/jugendhackt-ms-kb">Zum Repository</Link>
       </>
     ),
   },
