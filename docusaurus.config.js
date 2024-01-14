@@ -76,9 +76,8 @@ const config = {
             position: 'left',
             label: 'Anleitungen',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/openSenseLab/jugendhackt-ms-kb',
             label: 'GitHub',
             position: 'right',
           },
@@ -113,17 +112,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/openSenseLab/jugendhackt-ms-kb',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Jugend hackt Lab Münster, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Jugend hackt Lab Münster, Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
