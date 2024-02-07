@@ -26,7 +26,9 @@ print("Hallo, " + name + "!")
 ```
 Führe das wieder in der Konsole mit `python game.py` aus und du solltest nach deinem Namen gefragt, und anschließend persönlich gegrüßt werden.
 
-Der Befehl `input` Schreibt das Argument in den Klammern (hier *Wie heißt du?* in die Konsole und gibt die eingegebene Antwort zurück. Die Antwort speichern wir in der Variable `name`. Mit `+` zwischen `"Hallo, "`, `name` und `"!"` werden die Textschnipsel aneinander gehängt und zusammen ausgegeben.
+Der Befehl `input` Schreibt das Argument in den Klammern (hier *Wie heißt du?* in die Konsole und gibt die eingegebene Antwort zurück.
+Die Antwort speichern wir (mit `=`) in der Variable `name`.
+Mit `+` zwischen `"Hallo, "`, `name` und `"!"` werden die Textschnipsel aneinander gehängt und zusammen ausgegeben.
 
 Lass den Computer doch noch mehr über dich wissen, wie z.B. dein Alter.
 
@@ -41,9 +43,10 @@ print("Richtig!")
 ```
 
 Hier sind gleich mehrere neue Dinge:
-- `int` ist eine Funktion, die den Text, der von `input` zurück kommt, in eine Zahl umwandelt
-- `!=` bedeutet "ungleich", also hier dass `guess` und `number` verschieden sind
+- `int` ist eine Funktion, die den Text, der von `input` zurück kommt, in eine Zahl umwandelt.
+- `!=` bedeutet "ungleich", also hier dass `guess` und `number` verschieden sind.
 - `while` führt den Teil darunter (hier `guess = int(...`) so lange aus, wie die Bedingung dahinter (hier `guess != number`) stimmt. Es wird also so lange nach Schätzungen gefragt, wie `guess` (die Schätzung) anders als `number` (die gesuchte Zahl) ist.
+- Am Ende der Zeile mit `while` muss ein Doppelpunkt stehen.
 - Der Teil darunter (also `guess = int(...`) ist eingerückt, weil in Python nur der eingerückte Teil zur Schleife gehört.
 
 Zusätzlich zu `!=` gibt es noch `>` für "größer" und `<` für kleiner. Außerdem gibt es zusätzlich zu `while` noch `if`; das funktioniert genauso, führt den Teil darunter aber nur *einmal* aus, wenn die Bedingung stimmt. Probier doch mal, das Programm damit so zu erweitern, dass der Computer zurück gibt, ob die Schätzung zu groß, zu klein oder richtig war.
