@@ -20,6 +20,13 @@ Um zum Menü zurückzukommen, kannst du oben auf das Tinkercad-Logo klicken. Dei
 
 ![Ein Screenshot aus dem Editor-Bereich von Tinkercad mit Pfeil auf das Logo links oben](../assets/tinkercad_back_to_home.jpg)
 
+## Modellieren
+
+Um neue Objekte hinzuzufügen, kannst du rechts Formen per drag-and-drop in die Mitte ziehen.
+Wenn du die rechte Maustaste gedrückt hältst, kannst du die Ansicht rotieren. Wenn du die mittlere Maustaste gedrückt hältst, kannst du die Ansicht verschieben.
+
+Um Formen aus anderen Formen herauszuschneiden, kannst du "Bohrungen" (die grau schraffierten Formen) über die bestehenden Formen ziehen, beide markieren und oben in der Leiste mit dem "Gruppieren" Symbol zusammenführen. 
+
 ## Vorhandenes Projekt laden
 
 Du kannst an einem Projekt, das du zum Beispiel beim letzen Lab angefangen hast, weiterarbeiten, indem du im Entwürfe-Bereich auf dein Projekt klickst.
