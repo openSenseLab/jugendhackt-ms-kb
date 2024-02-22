@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Retro-Game in Python programmieren
 ## Hello, world!
-Als erstes Programm schreiben wir ganz klassisch ein sogenanntes *Hello World Programm*. Erstell dafür eine Datei `game.py` mit dem Inhalt
+Als erstes Programm schreiben wir ganz klassisch ein sogenanntes *Hello World Programm*. Erstell dafür eine Datei `game.py` (z.B. in Visual Studio Code) mit dem Inhalt
 ```python
 print("Hello, world!")
 ```
-und führe es in einer Konsole mit
+und führe es über den Button in VS Code oder in einer Konsole mit
 ```bash
 python game.py
 ```
@@ -24,7 +24,7 @@ Als nächstes möchten wir, dass unser Computer uns grüßt. Dafür muss der Com
 name = input("Wie heißt du? ")
 print("Hallo, " + name + "!")
 ```
-Führe das wieder in der Konsole mit `python game.py` aus und du solltest nach deinem Namen gefragt, und anschließend persönlich gegrüßt werden.
+Führe das wieder über den Button in VS Code oder in der Konsole mit `python game.py` aus und du solltest nach deinem Namen gefragt, und anschließend persönlich gegrüßt werden.
 
 Der Befehl `input` Schreibt das Argument in den Klammern (hier *Wie heißt du?* in die Konsole und gibt die eingegebene Antwort zurück.
 Die Antwort speichern wir (mit `=`) in der Variable `name`.
