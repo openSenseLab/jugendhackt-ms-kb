@@ -96,6 +96,10 @@ const config = {
                 href: 'https://jugendhackt.org',
               },
               {
+                label: 'Lab Münster',
+                href: 'https://jugendhackt.org/lab/muenster/',
+              },
+              {
                 label: 'openSenseLab',
                 href: 'https://opensenselab.org',
               },
