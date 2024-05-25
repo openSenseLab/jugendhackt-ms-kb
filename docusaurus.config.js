@@ -59,7 +59,7 @@ const config = {
       navbar: {
         title: 'Jugend hackt Lab Münster',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Jugend hackt Alpaka Logo',
           src: 'img/logo.svg',
         },
         items: [
