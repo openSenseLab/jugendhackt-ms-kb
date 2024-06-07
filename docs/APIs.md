@@ -1,6 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
+
+# APIs
 
 ## API - Application Programming Interface
 
