@@ -31,7 +31,7 @@ Oft werden bestimmte Noten in einem Musikstück immer wieder wiederholt. Dafür 
   sleep 0.5
 end
 ```
-Du kannst natürlich auch Schleifen in Schleifen stapel. Hier wird viermal hintereinander zwei Cs und ein D gespielt:
+Du kannst natürlich auch Schleifen in Schleifen stapeln. Hier wird viermal hintereinander zwei Cs und ein D gespielt:
 ```
 4.times do
   2.times do
