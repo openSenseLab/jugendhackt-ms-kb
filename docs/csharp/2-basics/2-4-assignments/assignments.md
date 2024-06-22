@@ -6,9 +6,9 @@ sidebar_label: Aufgaben
 # Aufgaben
 
 Hier findest du einige Aufgaben, die die vorher beschriebenen Grundlagen auf die eine oder andere Art umsetzen. Lösungen und Zwischenlösungen findest du im Ordner "Lösungen" unter den Aufgaben in der Navigations-Übersicht.
-**Bitte denke aber daran, dass in der Programmierung viele Wege nach Rom führen. Das heißt, dass das mögliche Lösungen sind. Wenn dein Programm anders aussieht, aber die Aufgabe ebenfalls korrekt löst, ist es genauso richtig.**
+**Bitte denke aber daran, dass in der Programmierung viele Wege nach Rom führen. Das heißt, dass wir dir *mögliche* Lösungen geben. Wenn dein Programm anders aussieht, aber die Aufgabe ebenfalls korrekt löst, ist es genauso richtig.**
 
-Generell gilt in der Informatik: Wenn du nicht weiter kommst, ist die beste Lösungsstrategie eine Pause zu machen oder erst morgen weiterzuarbeiten. Sich an einem Problem stundenlang den Kopf zu zerbrechen führt nur sehr selten zum Erfolg.
+Generell gilt in der Informatik: Wenn du nicht weiter kommst, ist die beste Lösungsstrategie eine Pause zu machen oder an einem anderen Tag weiterzuarbeiten. Sich an einem Problem stundenlang den Kopf zu zerbrechen führt nur sehr selten zum Erfolg.
 
 ## 1. Errate meine Zahl
 
