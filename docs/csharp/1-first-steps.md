@@ -46,3 +46,10 @@ Um den Code in der Datei auszuführen, kannst du im Terminal den Befehl `dotnet 
 ![Ein Screenshot aus VSCode, in dem der Befehl 'dotnet run' im Terminal ausgeführt wird](../assets/csharp/vscode_dotnet_run.jpg)
 
 Jetzt bist du bereit, Code auszuführen und wir können uns auf Schreiben von Programmen konzentrieren!
+
+## Datei speichern
+
+Eine wichtige Sache noch: **VSCode speichert deine Eingaben nicht automatisch**. Du musst selbst in die Datei klicken und `strg` + `s` auf der Tastatur drücken, um sie zu speichern. Andernfalls hat die Ausführung von `dotnet run` nicht den aktuellsten Code.
+
+Du erkennst, dass eine Datei ungespeicherte Änderungen hat, wenn dieser Punkt oben neben dem Dateinamen steht. Nach dem Speichern verschwindet er.
+![Ein Screenshot aus VSCode, der den Punkt für ungespeicherte Änderungen neben dem Dateinamen markiert](../assets/csharp/vscode_save_file.jpg)
