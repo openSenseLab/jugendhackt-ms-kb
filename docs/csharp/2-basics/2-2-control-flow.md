@@ -75,6 +75,21 @@ while (i < 6)
 
 Dieser Code gibt ebenfalls alle Zahlen von 1 bis 5 aus. Und bestimmt erkennst du auch schon die einzelnen Bestandteile der `for`-Schleife wieder. Zuerst wird `i` mit dem Wert 1 initialisiert (`int i = 1`). Die `while`-Schleife überprüft dann vor jeder Ausführung, ob die angegebene Bedingung (`i < 6`) noch erfüllt ist, und führt den nachfolgenden Code nur aus, wenn diese Bedingung `true` ergibt. Zum Schluss wird am Ende jedes Durchlaufs `i` um 1 erhöht (`i++`).
 
+Wenn es um das Hochzählen einer Variable geht, wird meistens `for` verwendet. `while` hingegen wird oft benutzt, wenn ein Vorgang unbestimmt of ausgeführt werden soll bis eine bestimmte Bedinung erfüllt ist.<br/>
+In diesem Beispiel wird so lange eine Zufallszahl zwischen 0 und 10 erzeugt bis 5 dabei raus kommt. Das kann schon beim ersten Durchlauf sein, vielleicht aber auch erst beim 25.Mal. Solange die `isRunning` Variable aber auf `true` steht, wird `while` immer weiter ausgeführt. Erst wenn die 5 getroffen wurde, wird `isRunning` auf `false` gesetzt und die `while`-Schleife nicht weiter ausgeführt.
+
+```cs
+bool isRunning = true;
+var random = new Random();
+while(isRunning)
+{
+	if(random.Next(0, 10) == 5)
+	{
+		isRunning = false;
+	}
+}
+```
+
 ### Vergleiche
 
 In den vorherigen Abschnitten hast du gelernt, dass wir Vergleiche (`i < 6`) anstellen können, um Wahrheitswerte (`true`, `false`) zu erhalten. Das Zeichen, das du in der Mitte des Vergleichs siehst (`<`) nennt man Vergleichsoperator und ist hier ein 'kleiner als'. Es gibt aber noch viele Weitere:

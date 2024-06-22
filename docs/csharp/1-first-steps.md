@@ -47,6 +47,9 @@ Um den Code in der Datei auszuführen, kannst du im Terminal den Befehl `dotnet 
 
 Jetzt bist du bereit, Code auszuführen und wir können uns auf Schreiben von Programmen konzentrieren!
 
+## Progamm abbrechen
+Manchmal willst du die Ausführung des Programms abbrechen bevor es sich selbst beendet. Das kannst du machen, indem du in das Terminal klickst und `strg` + `c` drückst.
+
 ## Datei speichern
 
 Eine wichtige Sache noch: **VSCode speichert deine Eingaben nicht automatisch**. Du musst selbst in die Datei klicken und `strg` + `s` auf der Tastatur drücken, um sie zu speichern. Andernfalls hat die Ausführung von `dotnet run` nicht den aktuellsten Code.
