@@ -30,3 +30,13 @@ Dadurch erstellst du ein neues Projekt mit dem Namen 'FirstSteps' in der aktuell
 
 ![Ein Screenshot aus VSCode, in dem die Dateien Program.cs und FirstSteps.csproj zu sehen sind](../assets/csharp/vscode_files_start.jpg)
 
+Die Datei `FirstSteps.csproj` ist für dich vorerst irrelevant. Sie wird später dazu benutzt, um andere Projekte zu verknüpfen.<br/>
+`Program.cs` ist die wichtigere Datei. Die Dateiendung `.cs` gibt an, dass es sich um eine C#-Datei handelt und dadurch ausführbaren Code beinhaltet. Standardmäßig ist sie am Anfang mit einer Codezeile gefüllt, die bei Ausführung den Text `Hello, World!` in die Ausgabe schreibt:
+```cs
+Console.WriteLine("Hello, World!");
+```
+
+Um den Code in der Datei auszuführen, kannst du im Terminal den Befehl `dotnet run` ausführen
+![Ein Screenshot aus VSCode, in dem der Befehl 'dotnet run' im Terminal ausgeführt wird](../assets/csharp/vscode_dotnet_run.jpg)
+
+Jetzt bist du bereit, Code auszuführen und wir können uns auf Schreiben von Programmen konzentrieren!
