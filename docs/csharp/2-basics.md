@@ -44,12 +44,12 @@ int age = 14;
 age = age + 1;
 ```
 
-Bei einer Zuweisung (Zeile 2), evaluiert der Computer immer zuerst die rechte Seite (`age + 1`) und speichert das Ergebnis dann in der Variable auf der linken Seite. Beachte, dass in Zeile zwei kein Datentyp (`int`) vor `age` mehr benötigt wird, da der Datentyp von `age` bereits in der Zeile darüber angegeben wurde.<br/>
+Bei einer Zuweisung (Zeile 2), evaluiert der Computer immer zuerst die rechte Seite (`age + 1`) und speichert das Ergebnis dann in der Variable auf der linken Seite. Beachte, dass in Zeile 2 kein Datentyp (`int`) vor `age` mehr benötigt wird, da der Datentyp von `age` bereits in der Zeile darüber bei der ersten Verwendung angegeben wurde.<br/>
 Der Computer setzt also zuerst den aktuellen Wert von `age` auf der rechten Seite ein
 ```cs
 age = 14 + 1;
 ```
-rechnet dann das ergebnis aus speichert es in `age` ab.
+rechnet dann das ergebnis aus speichert es in `age` ab. `age` hat danach den Wert `15`.
 ```cs
 age = 15;
 ```
@@ -137,13 +137,13 @@ Dieser Code gibt ebenfalls alle Zahlen von 1 bis 5 aus. Und bestimmt erkennst du
 
 ### Vergleiche
 
-In den vorherigen Abschnitten hast du gelert, dass wir Vergleiche (`i < 6`) anstellen können, um Wahrheitswerte (`true`, `false`) zu erhalten. Das Zeichen, das du in der Mitte des Vergleichs siehst (`<`) nennt man Vergleichoperator und ist hier ein 'kleiner als'. Es gibt aber noch viele Weitere:
+In den vorherigen Abschnitten hast du gelernt, dass wir Vergleiche (`i < 6`) anstellen können, um Wahrheitswerte (`true`, `false`) zu erhalten. Das Zeichen, das du in der Mitte des Vergleichs siehst (`<`) nennt man Vergleichsoperator und ist hier ein 'kleiner als'. Es gibt aber noch viele Weitere:
 ```cs
-i < 6 -> kleiner als
-i > 6 -> größer als
-i <= 6 -> kleiner gleich
-i >= 6 -> größer gleich
-i == 6 -> exakt gleich
+i < 6   -> kleiner als
+i > 6   -> größer als
+i <= 6  -> kleiner gleich
+i >= 6  -> größer gleich
+i == 6  -> exakt gleich
 ```
 
-Verwechsle vor allem das letzte Beispiel, den exakten Vergleich (`==`), nicht mit der Zuweisung `=`. Bei der Zuweisung wird immer ein Wert in eine Variable geschrieben, wogegen bei dem exakten Vergleich ein Wahrheitswert ermittelt wird.
+Verwechsle vor allem das letzte Beispiel, den exakten Vergleich (`==`), nicht mit der Zuweisung `=`. Bei der Zuweisung wird immer ein Wert in eine Variable geschrieben, wogegen beim exakten Vergleich ein Wahrheitswert ermittelt wird.

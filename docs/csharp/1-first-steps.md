@@ -26,7 +26,13 @@ Um C# auszuführen, brauchst du zuerst ein sogenanntes 'Projekt'. Das kannst du 
 dotnet new console --name FirstSteps --framework net8.0 --language "C#"
 ```
 
-Dadurch erstellst du ein neues Projekt mit dem Namen 'FirstSteps' in der aktuellsten Version von C#. Jetzt solltest du mehrere Dateien links im Explorer sehen
+Dadurch erstellst du ein neues Projekt mit dem Namen 'FirstSteps' in der aktuellsten Version von C#.
+
+Danach musst du noch `cd .\FirstSteps` im Terminal ausführen, um in den eben erstellten `FirstSteps` Ordner zu gehen (ansonsten kannst du später das Programm nicht starten). Der Befehl `cd` steht für "change directory", also "wechsel den Ordner".
+
+![Ein Screenshot aus VSCode, der die oben angegebenen Befehle im Terminal zeigt](../assets/csharp/vscode_create_project.jpg)
+
+Jetzt solltest du mehrere Dateien links im Explorer sehen
 
 ![Ein Screenshot aus VSCode, in dem die Dateien Program.cs und FirstSteps.csproj zu sehen sind](../assets/csharp/vscode_files_start.jpg)
 
