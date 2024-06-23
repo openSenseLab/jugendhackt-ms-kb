@@ -45,7 +45,7 @@ Console.WriteLine("Hello, World!");
 Um den Code in der Datei auszuführen, kannst du im Terminal den Befehl `dotnet run` ausführen
 ![Ein Screenshot aus VSCode, in dem der Befehl 'dotnet run' im Terminal ausgeführt wird](../assets/csharp/vscode_dotnet_run.jpg)
 
-Jetzt bist du bereit, Code auszuführen und wir können uns auf Schreiben von Programmen konzentrieren!
+Jetzt bist du bereit, Code auszuführen und wir können uns auf das Schreiben von Programmen konzentrieren!
 
 ## Progamm abbrechen
 Manchmal willst du die Ausführung des Programms abbrechen bevor es sich selbst beendet. Das kannst du machen, indem du in das Terminal klickst und `strg` + `c` drückst.
@@ -55,4 +55,12 @@ Manchmal willst du die Ausführung des Programms abbrechen bevor es sich selbst 
 Eine wichtige Sache noch: **VSCode speichert deine Eingaben nicht automatisch**. Du musst selbst in die Datei klicken und `strg` + `s` auf der Tastatur drücken, um sie zu speichern. Andernfalls hat die Ausführung von `dotnet run` nicht den aktuellsten Code.
 
 Du erkennst, dass eine Datei ungespeicherte Änderungen hat, wenn dieser Punkt oben neben dem Dateinamen steht. Nach dem Speichern verschwindet er.
+
 ![Ein Screenshot aus VSCode, der den Punkt für ungespeicherte Änderungen neben dem Dateinamen markiert](../assets/csharp/vscode_save_file.jpg)
+
+## Fehler beheben
+Programmcode ist sehr strikt und folgt starken Regeln. Wenn du hier mal ein `;` vergisst oder dort eine Klammer falsch setzt, kann dein Programm nicht ausgeführt werden. Aber: Der Computer ist dein Freund. Er sagt dir genau, wo der Fehler ist, auch wenn die Fehlermeldung ab und an etwas kryptisch sein mag. In diesem Beispiel ist das Problem in Zeile 7, Spalte 27.
+
+![Ein Screenshot aus VSCode, in dem eine Fehlermeldung im Terminal zu sehen ist](../assets/csharp/vscode_error.jpg)
+
+Meistens siehst du aber auch im Code selbst eine rote Markierung, die dir anzeigt, dass dort etwas nicht stimmt.

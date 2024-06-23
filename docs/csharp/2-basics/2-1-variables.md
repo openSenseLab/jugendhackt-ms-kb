@@ -32,7 +32,7 @@ bool isSleeping = false;
 Beachte, dass der Wert eines `string` immer in `"` geschrieben werden muss.
 
 
-Sofern der Datentyp des Werts auf der rechte Seite der Zuweisung klar ist, kannst du auch `var` als Datentyp benutzen und dadurch dem Computer sagen, er soll den Datentyp selbst herausfinden.
+Du kannst allerdings auch `var` als Datentyp benutzen und dadurch dem Computer sagen, er soll den Datentyp selbst herausfinden.
 ```cs
 var age = 16;
 ```
