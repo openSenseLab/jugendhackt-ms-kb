@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import { Link } from 'react-router-dom';
 
 const FeatureList = [
   {
@@ -15,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Alle Anleitungen an einem Ort!',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/JH_Logo_Lab_Muenster.svg').default,
     description: (
       <>
         Alle Anleitungen sind an einem Ort. Du musst nicht mehr lange suchen, um die Anleitungen und Infos zu finden, die du brauchst.
@@ -27,12 +26,12 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Fehlt dir eine Anleitung? Dann erstelle gerne eine eigene Anleitung oder ein Issue  über das Github Repository: <Link to="https://github.com/openSenseLab/jugendhackt-ms-kb">Zum Repository</Link>
+        Fehlt dir eine Anleitung? Dann sprich doch die MentorInnen an und wir werden sie ergänzen.
       </>
     ),
   },
 ];
-//https://github.com/openSenseLab/jugendhackt-ms-kb
+
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>

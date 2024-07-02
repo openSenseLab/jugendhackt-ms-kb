@@ -7,19 +7,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Jugend hackt Lab Münster',
-  tagline: 'Knowledge Base vom Jugend hackt Lab Münster',
+  tagline: 'Knowledge Base des Jugend hackt Lab Münster',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://jugendhackt-ms.netlify.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Jugend hack Lab Münster', // Usually your GitHub org/user name.
+  projectName: 'Knowledge Base', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'de',
+    locales: ['de'],
   },
 
   presets: [
@@ -42,14 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/openSenseLab/jugendhackt-ms-kb/blob/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -61,12 +54,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Jugend hackt Lab Münster',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Jugend hackt Alpaka Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -76,9 +67,8 @@ const config = {
             position: 'left',
             label: 'Anleitungen',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/openSenseLab/jugendhackt-ms-kb',
             label: 'GitHub',
             position: 'right',
           },
@@ -104,6 +94,10 @@ const config = {
                 href: 'https://jugendhackt.org',
               },
               {
+                label: 'Lab Münster',
+                href: 'https://jugendhackt.org/lab/muenster/',
+              },
+              {
                 label: 'openSenseLab',
                 href: 'https://opensenselab.org',
               },
@@ -113,21 +107,18 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/openSenseLab/jugendhackt-ms-kb',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Jugend hackt Lab Münster, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Jugend hackt Lab Münster`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['csharp'],
       },
     }),
 };
