@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-sidebar_label: Aufgaben
+sidebar_label: Programmieren
 ---
 
-# Aufgaben
+# Programmieren
 
 Hier findest du einige Aufgaben, die die vorher beschriebenen Grundlagen auf die eine oder andere Art umsetzen. Lösungen und Zwischenlösungen findest du im Ordner "Lösungen" unter den Aufgaben in der Navigations-Übersicht.
 **Bitte denke aber daran, dass in der Programmierung viele Wege nach Rom führen. Das heißt, dass wir dir *mögliche* Lösungen geben. Wenn dein Programm anders aussieht, aber die Aufgabe ebenfalls korrekt löst, ist es genauso richtig.**
