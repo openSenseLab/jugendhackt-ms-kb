@@ -77,16 +77,16 @@ for (i = 0; i < 10; i++)
 ## 7. Aufgabe
 
 ```cs
-Console.Write("Gib mir eine Zahl: ");
+Console.Write("Gib mir einen Text: ");
 int input = Console.WriteLine();
 
-Console.WriteLine("Du hast die Zahl " + input + " eingegeben");
+Console.WriteLine("Du hast den Text '" + input + "' eingegeben");
 ```
 
 ## 8. Aufgabe
 
 ```cs
-if (int i = 0, i < 20, i++)
+if (int i = 1, i <= 20, i++)
 {
     if (i % 3 == 0)
     {
