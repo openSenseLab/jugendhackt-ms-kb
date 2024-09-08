@@ -45,3 +45,11 @@ Beispiel-Ausgabe:
 Gib mir einen Index: 4
 Der Durchschnitt aller Zahlen bis zu Index 4 ist 2,4!
 ```
+
+## 2. Maximum
+Schreibe ein Programm, dass aus einem selbstgewählten Array die höchste Zahl finde.
+
+Beispiel-Ausgabe für Array `[2, 6, -103, 81, 19, 41]`:
+```
+Die höchste Zahl ist 81.
+```
