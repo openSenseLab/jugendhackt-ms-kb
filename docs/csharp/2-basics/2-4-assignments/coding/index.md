@@ -164,3 +164,28 @@ Gib mir eine Zahl: 32
 Gib mir eine zweite Zahl: 4
 4 ist ein Teiler von 32
 ```
+
+## 10. FizzBuzz
+
+Schreibe ein Programm, dass die Zahlen von 1 bis 30 ausgibt. Allerdings soll es (anstatt der Zahl) "Fizz" ausgeben, wenn die Zahl durch 3 teilbar ist, "Buzz" ausgeben, wenn die Zahl durch 5 teilbar ist und "FizzBuzz" ausgeben, wenn die Zah durch 3 und 5 teilbar ist.
+
+Beispiel-Ausgabe:
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+...
+```
