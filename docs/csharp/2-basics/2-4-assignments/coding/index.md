@@ -139,7 +139,15 @@ Der Nicht-Umsatzsteuer-Anteil ist 14,58€.
 
 ### 8.1 Variable Umsatzsteuer
 
-Erweitere das Programm so, dass es ebenfalls nach dem Prozentsatz für die Umsatzsteuer fragt und die Berechnung darauf aufbaut.
+Erweitere das Programm so, dass es ebenfalls nach dem Prozentsatz für die Umsatzsteuer fragt und die Berechnung darauf aufbaut.<br/>
+Tipp: Wenn du ein `int` durch ein `int` teilst, kommt immer ein `int` als Ergebnis zurück (alles nach dem Komma wirft der Computer weg). Allerdings ist ein Durchschnitt oft eine Kommazahl. Um das korrekte Ergebnis zu bekommen, musst du ein `int` durch ein `float` (Kommazahl) teilen (oder umgekehrt.) Um ein `float` zu erhalten, kannst du ein `int` in ein `float` umwandeln durch `(float)` vor der Zahl oder der Variable. In der Fachsprache nennt man das einen "Cast".
+```cs
+int number = 30;
+float floatNumber = (float)number
+```
+```cs
+float floatNumber = (float)30; // hier könntest du auch 30f schreiben anstatt (float)30
+```
 
 Beispiel-Ausgabe:
 ```
