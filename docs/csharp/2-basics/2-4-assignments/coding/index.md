@@ -125,3 +125,26 @@ Beispiel-Ausgabe:
 Gib mir einen Kreisradius in cm: 6
 Der Kreis hat eine Fläche von 113,09733552923255cm²
 ```
+
+## 8. Umsatzsteuer berechnen
+
+So ziemlich alles, was du in Deutschland kaufen kannst, enthält Umsatzsteuer im Preis. Für Lebensmittel 5%, für das meiste andere 19%. Schreibe ein Programm, dass nach einem Preis fragt und dessen Umsatzsteuer-Anteil von 19% und den Nicht-Umsatzsteuer-Anteil ausgibt.
+
+Beispiel-Ausgabe:
+```
+Gib mir einen Preis in €: 18
+Der Umsatzsteuer-Anteil ist 3,42€.
+Der Nicht-Umsatzsteuer-Anteil ist 14,58€.
+```
+
+### 8.1 Variable Umsatzsteuer
+
+Erweitere das Programm so, dass es ebenfalls nach dem Prozentsatz für die Umsatzsteuer fragt und die Berechnung darauf aufbaut.
+
+Beispiel-Ausgabe:
+```
+Gib mir einen Preis in €: 18
+Gib mir einen Umsatzsteuer-Prozentsatz: 7
+Der Umsatzsteuer-Anteil ist 1,26€.
+Der Nicht-Umsatzsteuer-Anteil ist 16,74€.
+```
