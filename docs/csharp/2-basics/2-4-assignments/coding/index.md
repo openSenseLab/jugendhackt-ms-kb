@@ -148,3 +148,19 @@ Gib mir einen Umsatzsteuer-Prozentsatz: 7
 Der Umsatzsteuer-Anteil ist 1,26€.
 Der Nicht-Umsatzsteuer-Anteil ist 16,74€.
 ```
+
+## 9. Teiler
+
+Schreibe ein Programm, dass zwei Zahlen entgegennimmt und ausgibt, ob die zweite Zahl ein Teiler der ersten Zahl ist.
+
+Beispiel-Ausgabe:
+```
+Gib mir eine Zahl: 16
+Gib mir eine zweite Zahl: 5
+5 ist kein Teiler von 16
+```
+```
+Gib mir eine Zahl: 32
+Gib mir eine zweite Zahl: 4
+4 ist ein Teiler von 32
+```

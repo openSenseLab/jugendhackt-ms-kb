@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 11
 sidebar_label: 8.1 Variable Umsatzsteuer
 ---
 
