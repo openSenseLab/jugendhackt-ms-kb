@@ -175,7 +175,7 @@ Gib mir eine zweite Zahl: 4
 
 ## 10. FizzBuzz
 
-Schreibe ein Programm, dass die Zahlen von 1 bis 30 ausgibt. Allerdings soll es (anstatt der Zahl) "Fizz" ausgeben, wenn die Zahl durch 3 teilbar ist, "Buzz" ausgeben, wenn die Zahl durch 5 teilbar ist und "FizzBuzz" ausgeben, wenn die Zah durch 3 und 5 teilbar ist.
+Schreibe ein Programm, dass die Zahlen von 1 bis 30 ausgibt. Allerdings soll es (anstatt der Zahl) "Fizz" ausgeben, wenn die Zahl durch 3 teilbar ist, "Buzz" ausgeben, wenn die Zahl durch 5 teilbar ist und "FizzBuzz" ausgeben, wenn die Zahl durch 3 und 5 teilbar ist.
 
 Beispiel-Ausgabe:
 ```
