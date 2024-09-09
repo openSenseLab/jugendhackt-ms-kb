@@ -125,3 +125,75 @@ Beispiel-Ausgabe:
 Gib mir einen Kreisradius in cm: 6
 Der Kreis hat eine Fläche von 113,09733552923255cm²
 ```
+
+## 8. Umsatzsteuer berechnen
+
+So ziemlich alles, was du in Deutschland kaufen kannst, enthält Umsatzsteuer im Preis. Für Lebensmittel 5%, für das meiste andere 19%. Schreibe ein Programm, dass nach einem Preis fragt und dessen Umsatzsteuer-Anteil von 19% und den Nicht-Umsatzsteuer-Anteil ausgibt.
+
+Beispiel-Ausgabe:
+```
+Gib mir einen Preis in €: 18
+Der Umsatzsteuer-Anteil ist 3,42€.
+Der Nicht-Umsatzsteuer-Anteil ist 14,58€.
+```
+
+### 8.1 Variable Umsatzsteuer
+
+Erweitere das Programm so, dass es ebenfalls nach dem Prozentsatz für die Umsatzsteuer fragt und die Berechnung darauf aufbaut.<br/>
+Tipp: Wenn du ein `int` durch ein `int` teilst, kommt immer ein `int` als Ergebnis zurück (alles nach dem Komma wirft der Computer weg). Allerdings ist ein Durchschnitt oft eine Kommazahl. Um das korrekte Ergebnis zu bekommen, musst du ein `int` durch ein `float` (Kommazahl) teilen (oder umgekehrt.) Um ein `float` zu erhalten, kannst du ein `int` in ein `float` umwandeln durch `(float)` vor der Zahl oder der Variable. In der Fachsprache nennt man das einen "Cast".
+```cs
+int number = 30;
+float floatNumber = (float)number
+```
+```cs
+float floatNumber = (float)30; // hier könntest du auch 30f schreiben anstatt (float)30
+```
+
+Beispiel-Ausgabe:
+```
+Gib mir einen Preis in €: 18
+Gib mir einen Umsatzsteuer-Prozentsatz: 7
+Der Umsatzsteuer-Anteil ist 1,26€.
+Der Nicht-Umsatzsteuer-Anteil ist 16,74€.
+```
+
+## 9. Teiler
+
+Schreibe ein Programm, dass zwei Zahlen entgegennimmt und ausgibt, ob die zweite Zahl ein Teiler der ersten Zahl ist.
+
+Beispiel-Ausgabe:
+```
+Gib mir eine Zahl: 16
+Gib mir eine zweite Zahl: 5
+5 ist kein Teiler von 16
+```
+```
+Gib mir eine Zahl: 32
+Gib mir eine zweite Zahl: 4
+4 ist ein Teiler von 32
+```
+
+## 10. FizzBuzz
+
+Schreibe ein Programm, dass die Zahlen von 1 bis 30 ausgibt. Allerdings soll es (anstatt der Zahl) "Fizz" ausgeben, wenn die Zahl durch 3 teilbar ist, "Buzz" ausgeben, wenn die Zahl durch 5 teilbar ist und "FizzBuzz" ausgeben, wenn die Zahl durch 3 und 5 teilbar ist.
+
+Beispiel-Ausgabe:
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+...
+```

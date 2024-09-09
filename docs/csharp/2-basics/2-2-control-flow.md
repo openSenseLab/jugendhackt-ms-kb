@@ -98,6 +98,7 @@ i < 6   -> kleiner als
 i > 6   -> größer als
 i <= 6  -> kleiner gleich
 i >= 6  -> größer gleich
+i != 6  -> ungleich
 i == 6  -> exakt gleich
 ```
 

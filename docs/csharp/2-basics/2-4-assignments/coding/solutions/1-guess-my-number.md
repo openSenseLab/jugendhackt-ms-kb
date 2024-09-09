@@ -3,7 +3,7 @@ sidebar_position: 1
 sidebar_label: 1. Errate meine Zahl
 ---
 
-# Lösung: Errate meine Zahl
+# 1. Lösung: Errate meine Zahl
 
 ```cs
 Console.Write("Errate meine Zahl: ");
