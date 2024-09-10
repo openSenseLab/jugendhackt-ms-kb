@@ -39,3 +39,15 @@ Um zu überprüfen, ob CircuitPython erfolgreich installiert wurde, zeigen wir d
 print("Hello World!")
 ```
 10. Klicke auf `Save + Run`. Du solltest nun `Hello World!` in der Konsole sehen.
+
+## CircuitPython Libraries
+
+Für sehr viele Bauteile wie Sensoren, Aktoren, Display und vieles weitere gibt es für CircuitPython spezielle Bibliotheken. Diese Bibliotheken sind in der Regel sehr einfach zu installieren und ermöglichen dir den schnellen Einstieg in die Programmierung. Eine Übersicht über die verfügbaren Bibliotheken findest du auf der [Adafruit CircuitPython Library Seite](https://circuitpython.org/libraries).
+
+## Weiterführende Links
+- [CircuitPython Download-Seite](https://circuitpython.org/board/sensebox_mcu_esp32s2/)
+- [CircuitPython Editor](https://code.circuitpython.org/)
+- [Mu Editor](https://codewith.mu/)
+- [Adafruit CircuitPython Library Seite](https://circuitpython.org/libraries)
+- [CircuitPython Dokumentation](https://circuitpython.readthedocs.io/en/latest/docs/index.html)
+
