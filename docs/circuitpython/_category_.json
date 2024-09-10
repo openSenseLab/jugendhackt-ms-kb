@@ -1,6 +1,6 @@
 {
-  "label": "3D-Druck",
-  "position": 10,
+  "label": "CircuitPython",
+  "position": 1,
   "link": {
     "type": "generated-index"
   }
