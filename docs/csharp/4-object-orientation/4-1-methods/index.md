@@ -48,7 +48,7 @@ var studentGrade2 = 3.8;
 PrintStudent(studentName2, studentAge2, studentGrade2); // Aufruf 2
 
 // Neue Methode "PrintStudent"
-public void PrintStudent(string name, int age, double grade)
+void PrintStudent(string name, int age, double grade)
 {
     Console.WriteLine("Student Name: " + name);
     Console.WriteLine("Student Age: " + age);
@@ -60,8 +60,8 @@ Analysieren wir mal, was hier passiert ist. Wir haben alle `Console.WriteLine` i
 
 ## Aufbau
 
-Wie du oben vielleicht schon gesehen hast, besteht eine Methode aus vielen Teilen. Die erste Zeile (`public void PrintStudent(string name, int age, double grade)`) nennt man Signatur. Sie enthält die wichtigsten Informationen über die Methode:
-- `public` ist der Zugriffsmodifikator (access modifier). Er wird erst wichtig, sobald wir mit Klassen arbeiten.
+Wie du oben vielleicht schon gesehen hast, besteht eine Methode aus vielen Teilen. Die erste Zeile (`void PrintStudent(string name, int age, double grade)`) nennt man Signatur. Sie enthält die wichtigsten Informationen über die Methode:
+
 - `void` ist der Rückgabetyp (return type). Er gibt an, was für einen Datentyp unsere Methode zurückgibt. In diesem Fall gibt unsere Methode nichts zurück, daher wird `void` benutzt (void ist Englisch für "leer"). Wenn unsere Methode ein `int` zurückgeben würde, würden wir hier `int` schreiben. Weiter unten findest du dazu Beispiele.
 - `PrintStudent` ist der Name der Methode. Er wird benutzt, um die Methode aufzurufen.
 - `string name`, `int age` & `double grad` sind Parameter. Sie müssen beim Aufruf der Methode gefüllt werden und können dann in der Methode wie Variablen verwendet werden. Mehr dazu im nächsten Abschnitt. 
@@ -73,7 +73,7 @@ Außerhalb von Klassen werden Methoden aufgerufen, indem man ihren Namen gefolgt
 ```cs
 Print8();
 
-public void Print8()
+void Print8()
 {
     Console.WriteLine("8");
 }
@@ -84,7 +84,7 @@ Falls die Methode Parameter hat, müssen innerhalb der runden Klammern Argumente
 ```cs
 Print("hi");
 
-public void Print(string text)
+void Print(string text)
 {
     Console.WriteLine(text);
 }
@@ -101,7 +101,7 @@ Wie bereits beschrieben, können Methoden auch Werte zurückgeben.
 var result = Add(3, 5);
 Console.WriteLine(result);
 
-public int Add(int number1, int number2)
+int Add(int number1, int number2)
 {
     return 3 + 5;
 }
@@ -113,7 +113,7 @@ Hier haben wir eine Methode `Add`, die die beiden Parameter `number1` und `numbe
 var text = GetHi();
 Console.WriteLine(text);
 
-public string GetHi()
+string GetHi()
 {
     return "hi";
 }
@@ -128,7 +128,7 @@ Bisher haben wir immer gesagt, dass Code von oben nach unten ausgeführt wird. D
 ```cs
 Console.WriteLine("Moin");
 
-public string GetHi()
+string GetHi()
 {
     return "hi";
 }
@@ -137,7 +137,7 @@ public string GetHi()
 Es ist außerdem auch nicht wichtig, wo eine Methode steht. Sie kann am Anfang, Ende oder mitten im Code stehen. Allerdings solltest du darauf achten, dass du durch die Platzierung der Methode den Code weiterhin gut lesen kannst. Folgendes Programm ist somit ebenfalls valide:
 
 ```cs
-public int Add(int number1, int number2)
+int Add(int number1, int number2)
 {
     return 3 + 5;
 }
@@ -166,7 +166,7 @@ var studentGrade2 = 3.8;
 PrintStudent(studentName2, studentAge2, studentGrade2); // Aufruf 2
 
 // Neue Methode "PrintStudent"
-public void PrintStudent(string name, int age, double grade)
+void PrintStudent(string name, int age, double grade)
 {
     Console.WriteLine("Student Name: " + name);
     Console.WriteLine("Student Age: " + age);
@@ -180,7 +180,7 @@ Durch das Erstellen der `PrintStudent` Methode haben wir nicht mehr 6 mal `Conso
 PrintStudent("Alice", 15, 2.0);
 PrintStudent("Bob", 13, 3.8);
 
-public void PrintStudent(string name, int age, double grade)
+void PrintStudent(string name, int age, double grade)
 {
     Console.WriteLine("Student Name: " + name);
     Console.WriteLine("Student Age: " + age);
