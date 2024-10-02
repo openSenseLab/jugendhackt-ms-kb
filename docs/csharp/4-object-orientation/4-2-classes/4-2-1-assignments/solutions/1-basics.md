@@ -7,7 +7,7 @@ sidebar_label: 1. Grundlagen
 
 ```cs
 var pokemon = new Pokemon("Pikachu", 5);
-Console.WriteLine($"{pokemon.Name} hat Level {pokemon.Level}");
+Console.WriteLine(pokemon.Name + " hat Level " + pokemon.Level);
 
 public class Pokemon
 {

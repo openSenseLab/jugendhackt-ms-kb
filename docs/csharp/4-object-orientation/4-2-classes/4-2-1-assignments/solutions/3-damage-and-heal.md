@@ -7,7 +7,7 @@ sidebar_label: 3. Schaden & Heilung
 
 ```cs
 var pokemon = new Pokemon("Pikachu", 5);
-Console.WriteLine($"{pokemon.Name} hat Level {pokemon.Level} und {pokemon.Hp} HP");
+Console.WriteLine(pokemon.Name + " hat Level " + pokemon.Level + " und " + pokemon.Hp + " HP");
 
 pokemon.TakeDamage(20);
 pokemon.Heal(15);
@@ -36,11 +36,11 @@ public class Pokemon
         if (_hp < 0)
         {
             _hp = 0;
-            Console.WriteLine($"{_name} erleidet {damage} Schaden und ist kampfunfähig");
+            Console.WriteLine(_name + " erleidet " + damage + " Schaden und ist kampfunfähig");
         }
         else
         {
-            Console.WriteLine($"{_name} erleidet {damage} Schaden und hat noch {_hp} HP");
+            Console.WriteLine(_name + " erleidet " + damage + " Schaden und hat noch " + _hp + " HP");
         }
     }
     
@@ -52,7 +52,7 @@ public class Pokemon
             _hp = 100;
         }
         
-        Console.WriteLine($"{_name} wird um {heal} HP geheilt und hat nun {_hp} HP");
+        Console.WriteLine(_name + " wird um " + heal + " HP geheilt und hat nun " + _hp + " HP");
     }
 }
 ```

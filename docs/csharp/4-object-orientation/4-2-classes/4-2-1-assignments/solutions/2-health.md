@@ -9,7 +9,7 @@ Da wir im Konstruktor beliebigen Code ausführen können, setzen wir dort ein ne
 
 ```cs
 var pokemon = new Pokemon("Pikachu", 5);
-Console.WriteLine($"{pokemon.Name} hat Level {pokemon.Level} und {pokemon.Hp} HP");
+Console.WriteLine(pokemon.Name + " hat Level " + pokemon.Level + " und " + pokemon.Hp + " HP");
 
 public class Pokemon
 {
