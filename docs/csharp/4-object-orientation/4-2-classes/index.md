@@ -89,7 +89,7 @@ Person person = new Person("Tom", 16);
 Console.WriteLine("Die Person heißt " + person._name); // Fehler
 ```
 
-Auch dieser Code kann durch das private Feld nicht ausgeführt werden. Hierfür gibt es aber eine Lösung: Eigenschaften
+Auch dieser Code kann durch das private Feld nicht ausgeführt werden. Hierfür gibt es aber eine Lösung: Eigenschaften.
 
 ## Eigenschaften
 
@@ -121,4 +121,115 @@ Wir können also den Namen der Person nicht ändern. Allerdings können wir ihn 
 ```cs
 Person person = new Person("Tom");
 Console.WriteLine("Die Person heißt " + person.Name);
+```
+
+## Methoden
+
+Eigentlich haben wir in der vorherigen Einheit Methoden bereits besprochen, aber außerhalb von Klassen. Methoden kommen in den meisten Fällen aber innerhalb von Klassen vor und sehen dort etwas anders aus. Lass uns `Person` so erweitern, dass bei der Objekterstellung auch ein Alter in den Konstruktor mitgegeben werden muss.
+
+```cs
+var tom = new Person("Tom", 14);
+
+public class Person
+{
+    private string _name;
+    private int _age;
+
+    public Person(string name, int age)
+    {
+        _name = name;
+        _age = age;
+    }
+
+    public string Name => _name;
+    public int Age => _age;
+}
+```
+
+Da wir außerhalb der Klasse das Alter von Tom nicht ändern können, muss die Klasse eine Methode bereitstellen, die das kann. Wir bauen eine `CelebrateBirthday` Methode, die aufgerufen werden kann, wenn die Person Geburtstag hat. Dadurch können wir kontrollieren, dass nicht ein beliebiges Alter gesetzt wird, sondern immer nur um 1 erhöht wird.
+
+```cs
+var tom = new Person("Tom", 14);
+Console.WriteLine("Tom ist " + tom.Age + " Jahre alt");
+
+tom.CelebrateBirthday();
+Console.WriteLine("Tom ist " + tom.Age + " Jahre alt");
+
+public class Person
+{
+    private string _name;
+    private int _age;
+
+    public Person(string name, int age)
+    {
+        _name = name;
+        _age = age;
+    }
+
+    public string Name => _name;
+    public int Age => _age;
+
+    public void CelebrateBirthday()
+    {
+        _age++;
+    }
+}
+```
+
+Die `CelebrateBirthday` Methode sieht fast so aus wie die Methoden, die wir bisher kennengelernt haben. Allerdings beginnt die Signatur mit einem Zugriffsmodifikator (hier `public`). Dieser gibt an, von wo die Methode aufgerufen werden kann. `public` bedeutet, dass sie von außerhalb der Klasse (z.B. `tom.CelebrateBirthday();`) aufgerufen werden kann. `private` würde bedeuten, dass sie nur innerhalb der Klasse (z.B. von einer anderen Methode oder dem Konstruktor aus) aufgerufen werden kann.
+
+## Zweites Beispiel
+
+Sehen wir uns noch ein anderes Beispiel an, in dem wir ein Fahrrad modellieren.
+
+```cs
+public class Bicycle
+{
+    private string _color;
+    private bool _isElectrical;
+
+    public Bicycle(string color, bool isElectrical)
+    {
+        _color = color;
+        _isElectrical = isElectrical;
+    }
+
+    public string Color => _color;
+    public bool IsElectrical => _isElectrical;
+
+    public void InstallEngine()
+    {
+        _isElectrical = true;
+    }
+    
+    public void RemoveEngine()
+    {
+        _isElectrical = false;
+    }
+    
+    public void Paint(string color)
+    {
+        _color = color;
+    }
+}
+```
+
+Das Fahrrad hat eine Farbe (`_color`) und ein Feld, das angibt, ob es ein E-Bike ist (`_isElectrical`). Wir können aus dem Fahrrad ein E-Bike machen, indem wir einen Motor einbauen (`InstallEngine`), oder aus einem E-Bike ein normales Fahrrad machen, indem wir den Motor ausbauen (`RemoveEngine`).
+
+```cs
+var bike = new Bicycle("blau", false);
+Console.WriteLine("IsElectrical: " + bike.IsElectrical);
+
+bike.InstallEngine();
+Console.WriteLine("IsElectrical: " + bike.IsElectrical);
+```
+
+Außerdem haben wir die Möglichkeit, das Fahrrad neu anzumalen (`Paint`).
+
+```cs
+var bike = new Bicycle("blau", false);
+Console.WriteLine("Farbe: " + bike.Color);
+
+bike.Paint("rot");
+Console.WriteLine("Farbe: " + bike.Color);
 ```
