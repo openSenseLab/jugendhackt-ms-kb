@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2
-sidebar_label: 4.1 Klassen
+sidebar_label: 4.2 Klassen
 ---
 
 # Klassen
 
-Klassen sind einer der wichtigsten Grundbestandteile Objekt-orientierter Programmierung, denn Objekte werden aus Klassen erschaffen. Sehen wir uns ein einfaches Beispiel an:
+Klassen sind einer der wichtigsten Grundbestandteile Objektorientierter Programmierung, denn Objekte werden aus Klassen erschaffen. Sehen wir uns ein einfaches Beispiel an:
 
 ```cs
 public class Person
@@ -152,7 +152,7 @@ Da wir außerhalb der Klasse das Alter von Tom nicht ändern können, muss die K
 var tom = new Person("Tom", 14);
 Console.WriteLine("Tom ist " + tom.Age + " Jahre alt");
 
-tom.CelebrateBirthday();
+tom.CelebrateBirthday(); // Erhöht Alter um 1
 Console.WriteLine("Tom ist " + tom.Age + " Jahre alt");
 
 public class Person
