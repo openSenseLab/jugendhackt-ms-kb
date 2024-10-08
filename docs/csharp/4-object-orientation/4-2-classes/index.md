@@ -65,7 +65,7 @@ public class Person
 {
     private string _name;
 
-    public Person(string name, int age)
+    public Person(string name)
     {
         Console.WriteLine("Person " + name + " wird erstellt!");
         _name = name;
@@ -85,7 +85,7 @@ Wir können von außen auf das Feld in der Klasse zugreifen, den Inhalt ändern 
 Das bedeutet allerdings, dass wir auch nicht lesend auf das Feld zugreifen können, wenn wir den Namen der Person wissen wollen, z.B.
 
 ```cs
-Person person = new Person("Tom", 16);
+Person person = new Person("Tom");
 Console.WriteLine("Die Person heißt " + person._name); // Fehler
 ```
 
