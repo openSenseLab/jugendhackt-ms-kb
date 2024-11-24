@@ -70,7 +70,7 @@ Diese Namen/Farbe Dopplung in beiden Klassen können wir mit Vererbung auflösen
 
 ## Basisklassen
 
-Basisklassen sind Klassen, die eine Anzahl an Feldern, Properties und Methoden bereitstellen, die von Subklassen durch Vererbung benutzt werden können. Was das genau bedeutet, sehen wir in den nächsten Abschnitten. In unserem Fall könnte die Basisklasse `Animal` heißen. Legen wir sie zuerst leer an:
+Basisklassen (base classes) sind Klassen, die eine Anzahl an Feldern, Properties und Methoden bereitstellen, die von Subklassen durch Vererbung benutzt werden können. Was das genau bedeutet, sehen wir in den nächsten Abschnitten. In unserem Fall könnte die Basisklasse `Animal` heißen. Legen wir sie zuerst leer an:
 
 ```cs
 // Animal.cs
@@ -138,7 +138,7 @@ public class Dog : Animal
 }
 ```
 
-Wenn du die Klasse `Dog` wieder benutzt, um ein Objekt zu bauen und folgenden Code ausführst,
+Wenn du die Klasse `Dog` wieder benutzt, um ein Objekt zu bauen, und folgenden Code ausführst,
 
 ```cs
 // Program.cs
@@ -148,11 +148,11 @@ var dog = new Dog("Fiffi", "grau-braun", true);
 Console.WriteLine("Mein Hund heißt " + dog.Name);
 ```
 
-wirst du feststellen, dass der Computer Fehler anzeigt und sagt, dass er im Konstruktor von `Dog` nicht auf `_name` und `_color` zugreifen kann. Obwohl weiter oben gesagt wurde, dass Subklassen automatisch auf den Code in der Basisklasse zugreifen können. Das ist ist generell richtig, hat aber eine Einschränkung.
+wirst du feststellen, dass der Computer Fehler anzeigt und sagt, dass er im Konstruktor von `Dog` nicht auf `_name` und `_color` zugreifen kann. Obwohl weiter oben gesagt wurde, dass Subklassen automatisch auf den Code in der Basisklasse zugreifen können. Das ist generell richtig, hat aber eine Einschränkung.
 
 ## Zugriffsmodifikatoren
 
-Wir haben den Begriff Zugriffsmodifikatoren (access modifieres) im Kapitel über Klassen bereits kennengelernt. Sie geben an, von wo aus auf Felder, Properties und Methode zugegriffen werden kann. Bisher haben wir benutzt:
+Wir haben den Begriff Zugriffsmodifikatoren (access modifieres) im Kapitel über Klassen bereits kennengelernt. Sie geben an, von wo aus auf Felder, Properties und Methoden zugegriffen werden kann. Bisher haben wir benutzt:
 - `private` -> nur in der eigenen Klasse kann darauf zugegriffen werden
 - `public` -> von innerhalb und außerhalb der Klasse kann darauf zugegriffen werden.
 
@@ -160,7 +160,7 @@ Wenn du dir jetzt nochmal die Zugriffsmodifikatoren von `_name` und `_color` in 
 
 Die Lösung ist jetzt aber **nicht**, die Felder `public` zu machen, sondern wir benutzen einen neuen Zugriffsmodifikator: `protected`.
 
-`protected` bedeutet, dass auf das Feld/Property/Methode nur innerhalb der eigenen Klasse und aller Subklasse zugegriffen werden kann. Somit können die Felder von außen weiterhin nicht verändert werden, aber die Subklasse `Dog` kann mit ihnen arbeiten.
+`protected` bedeutet, dass auf das Feld/Property/Methode nur innerhalb der eigenen Klasse und aller Subklassen zugegriffen werden kann. Somit können die Felder von außen weiterhin nicht verändert werden, aber die Subklasse `Dog` kann mit ihnen arbeiten.
 
 ```cs
 // Animal.cs
@@ -175,7 +175,7 @@ public class Animal
 }
 ```
 
-Wenn wir das Programm jetzt ausführen, bekommen wir keinen Fehler mehr und die erwartete Ausgabe auf der Konsole. Anschließen können wir die Änderungen, die wir bisher an `Dog` gemacht haben, auch auf `Cat` übertragen:
+Wenn wir das Programm jetzt ausführen, bekommen wir keinen Fehler mehr und die erwartete Ausgabe auf der Konsole. Anschließend können wir die Änderungen, die wir bisher an `Dog` gemacht haben, auch auf `Cat` übertragen:
 
 ```cs
 // Dog.cs
@@ -246,7 +246,7 @@ public class Dog : Animal
     private bool _canFetchSticks;
     
     public Dog(string name, string color, bool canFetchSticks)
-        : base(name, color)
+        : base(name, color) // Aufruf des Animal-Konstruktors
     {
         _canFetchSticks = canFetchSticks;
     }
@@ -255,7 +255,19 @@ public class Dog : Animal
 }
 ```
 
-Dadurch wird der Konstruktor in `Animal` aufgerufen wenn der Konstruktor in `Dog` aufgerufen wird.
+Dadurch wird der Konstruktor in `Animal` aufgerufen, wenn der Konstruktor in `Dog` aufgerufen wird. Der `Animal`-Konstruktor benötigt die Parameter `name` und `color`, weshalb wir in den runden Klammern nach `base` die zwei Parameter `name` und `color` übergeben, die der `Dog`-Konstruktor definiert (neben `canFetchSticks`).<br/>
+Du musst aber nicht unbedingt die Parameter durchreichen. Du kannst auch feste Werte an die Basisklasse übergeben (wenn es Sinn ergibt).
+
+```cs
+public Dog(string color, bool canFetchSticks)
+    : base("Hansi", color)
+{
+    _canFetchSticks = canFetchSticks;
+}
+```
+
+In diesem Fall würden aber von nun an alle Hunde, die du erstellst, "Hansi" heißen.
+
 > Es ist übrigens egal, ob `: base(name, color)` in einer neuen Zeile ist oder nicht. Schreibe es so, wie du es am besten lesen kannst / am schönsten findest.
 
 ## Instanziierung von Basisklassen verhindern
