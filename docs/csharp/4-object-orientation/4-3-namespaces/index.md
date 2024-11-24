@@ -78,7 +78,7 @@ public class Person
 
 Wenn du jetzt `dotnet run` ausführst, läuft das Program wie vorher.
 
-Damit haben wir die Klasse in eine andere Datei geschoben, aber noch keine Namespaces. Das ist der nächste Schritt. Namespaces sind dafür da, Bereiche innerhalb eines Programs zu schaffen, die Klassen beinhalten können. Das kannst du dir ein bisschen wie Werkzeuge (Klassen) in Werkzeugkästen (Namespaces) vorstellen. Dadurch kannst du dem Programm später sagen, es soll nur die Werkzeugkästen benutzen, die du auch wirklich brauchst.
+Damit haben wir die Klasse in eine andere Datei geschoben, aber noch keine Namespaces. Das ist der nächste Schritt. Namespaces sind dafür da, Bereiche innerhalb eines Programms zu schaffen, die Klassen beinhalten können. Das kannst du dir ein bisschen wie Werkzeuge (Klassen) in Werkzeugkästen (Namespaces) vorstellen. Dadurch kannst du dem Programm später sagen, es soll nur die Werkzeugkästen benutzen, die du auch wirklich brauchst.
 
 Zunächst müssen wir die Klasse `Person` einem Namespace zuweisen. Das machen wir, indem wir über der Klasse `namespace`, gefolgt von dem Namen des Namespaces schreiben:
 
