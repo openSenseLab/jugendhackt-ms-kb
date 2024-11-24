@@ -82,35 +82,39 @@ void Print8()
 Falls die Methode Parameter hat, müssen innerhalb der runden Klammern Argumente übergeben werden, die der Computer in die Parameter der Methode automatisch einsetzt.
 
 ```cs
-Print("hi");
+Print("hi"); // "hi" ist das Argument
 
-void Print(string text)
+void Print(string text) // 'text' ist der Parameter
 {
+    // hier kann 'text' wie eine Variable verwendet werden
     Console.WriteLine(text);
 }
 ```
 
-In diesem Beispiel ist `"hi"` das Argument und `string text` ist der Parameter.<br/>
+In diesem Beispiel ist `"hi"` das Argument und `string text` der Parameter. Sobald der Code ausgeführt wird, setzte der Computer den string `"hi"` in `text` ein. Anschließend wird der Code in der Methode `Print` ausgeführt.
+
 Wichtig ist, dass die Datentypen der Argumente beim Aufruf mit den Datentypen der Parameter übereinstimmen. Man kann zum Beispiel keine `int` Argument in einen `string` Parameter einsetzen. Welches Argument in welchen Parameter eingesetzt wird, bestimmt die Reihenfolge.
 
 ## Rückgabe
 
-Wie bereits beschrieben, können Methoden auch Werte zurückgeben.
+Wie bereits beschrieben, können Methoden auch Werte zurückgeben. 'Zurückgeben' heißt, dass das Ergebnis der Methode in einer Variable gespeichert werden kann.
 
 ```cs
-var result = Add(3, 5);
+int result = Add(3, 5); // 'Add' gibt eine Zahl zurück, die wir in 'result' speichern
 Console.WriteLine(result);
 
 int Add(int number1, int number2)
 {
-    return 3 + 5;
+    // Was nach 'return' kommt, wird als Ergebnis der Methode zurückgegeben
+    return number1 + number2;
 }
 ```
 
-Hier haben wir eine Methode `Add`, die die beiden Parameter `number1` und `number2` addiert und das Ergebnis zurückgibt. Daher hat sie ein `int` als Rückgabetyp. Entsprechend muss der Rückgabetyp `string` sein, wenn die Methode einen `string` zurückgibt.
+Hier haben wir eine Methode `Add`, die die beiden Parameter `number1` und `number2` addiert und das Ergebnis zurückgibt. 
+Daher hat sie ein `int` als Rückgabetyp. Entsprechend muss der Rückgabetyp `string` sein, wenn die Methode einen `string` zurückgibt.
 
 ```cs
-var text = GetHi();
+string text = GetHi();
 Console.WriteLine(text);
 
 string GetHi()
@@ -139,10 +143,10 @@ Es ist außerdem auch nicht wichtig, wo eine Methode steht. Sie kann am Anfang, 
 ```cs
 int Add(int number1, int number2)
 {
-    return 3 + 5;
+    return number1 + number2;
 }
 
-var result = Add(3, 5);
+int result = Add(3, 5);
 Console.WriteLine(result);
 ```
 
