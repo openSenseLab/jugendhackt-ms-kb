@@ -8,7 +8,7 @@ sidebar_label: 4.4 Vererbung
 Im Kapitel über Namespaces haben wir zum Schluss kurz auf den Ordner `Animals` geschaut. Er hat zwei Klassen beinhaltet: `Dog` und `Cat`. Wenn wir beide Klassen modellieren, könnten sie so aussehen:
 
 ```cs
-// Cat.cs
+// Animals/Cat.cs
 namespace Firststeps.Animals;
 public class Cat
 {
@@ -30,7 +30,7 @@ public class Cat
 ```
 
 ```cs
-// Dog.cs
+// Animals/Dog.cs
 namespace Firststeps.Animals;
 public class Dog
 {
@@ -73,7 +73,7 @@ Diese Namen/Farbe Dopplung in beiden Klassen können wir mit Vererbung auflösen
 Basisklassen (base classes) sind Klassen, die eine Anzahl an Feldern, Properties und Methoden bereitstellen, die von Subklassen durch Vererbung benutzt werden können. Was das genau bedeutet, sehen wir in den nächsten Abschnitten. In unserem Fall könnte die Basisklasse `Animal` heißen. Legen wir sie zuerst leer an:
 
 ```cs
-// Animal.cs
+// Animals/Animal.cs
 namespace Firststeps.Animals;
 public class Animal
 {
@@ -83,7 +83,7 @@ public class Animal
 Jetzt können wir der Klasse `Dog` sagen, dass sie von `Animal` erben soll, indem wir `: Animal` nach dem Klassennamen schreiben:
 
 ```cs
-// Dog.cs
+// Animals/Dog.cs
 namespace Firststeps.Animals;
 public class Dog : Animal
 {
@@ -108,7 +108,7 @@ Der Sinn hinter Vererbung ist, dass Code nur einmal in der Basisklasse (`Animal`
 Damit schieben wir `Name` und `Color` von der Subklasse `Dog` in die Basisklasse `Animal`:
 
 ```cs
-// Animal.cs
+// Animals/Animal.cs
 namespace Firststeps.Animals;
 public class Animal
 {
@@ -121,7 +121,7 @@ public class Animal
 ```
 
 ```cs
-// Dog.cs
+// Animals/Dog.cs
 namespace Firststeps.Animals;
 public class Dog : Animal
 {
@@ -163,7 +163,7 @@ Die Lösung ist jetzt aber **nicht**, die Felder `public` zu machen, sondern wir
 `protected` bedeutet, dass auf das Feld/Property/Methode nur innerhalb der eigenen Klasse und aller Subklassen zugegriffen werden kann. Somit können die Felder von außen weiterhin nicht verändert werden, aber die Subklasse `Dog` kann mit ihnen arbeiten.
 
 ```cs
-// Animal.cs
+// Animals/Animal.cs
 namespace Firststeps.Animals;
 public class Animal
 {
@@ -178,7 +178,7 @@ public class Animal
 Wenn wir das Programm jetzt ausführen, bekommen wir keinen Fehler mehr und die erwartete Ausgabe auf der Konsole. Anschließend können wir die Änderungen, die wir bisher an `Dog` gemacht haben, auch auf `Cat` übertragen:
 
 ```cs
-// Dog.cs
+// Animals/Dog.cs
 namespace Firststeps.Animals;
 public class Dog : Animal
 {
@@ -196,7 +196,7 @@ public class Dog : Animal
 ```
 
 ```cs
-// Cat.cs
+// Animals/Cat.cs
 namespace Firststeps.Animals;
 public class Cat : Animal
 {
@@ -218,7 +218,7 @@ public class Cat : Animal
 Das ist schon weniger Code als vorher. Damit sind wir aber noch nicht am Ende. In beiden Klassen müssen jeweils immer noch die Felder `_name` und `_color` gesetzt werden. Auch das können wir in die Basisklasse `Animal` ziehen. Schreiben wir dafür einen Konstruktor.
 
 ```cs
-// Animal.cs
+// Animals/Animal.cs
 namespace Firststeps.Animals;
 public class Animal
 {
@@ -239,7 +239,7 @@ public class Animal
 Dieser Konstruktor muss anschließen aufgerufen werden. Das machen wir nicht dort, wo wir `new Dog(...)` schreiben, sondern in der Subklasse selbst. Wir fügen ein `: base(name, color)` nach den Parametern des Konstrktors in `Dog` ein.
 
 ```cs
-// Dog.cs
+// Animals/Dog.cs
 namespace Firststeps.Animals;
 public class Dog : Animal
 {
@@ -293,7 +293,7 @@ Wenn wir das aber auf die reale Welt beziehen, ergibt das keinen Sinn. Wir sehen
 `abstract` bedeutet in verschiedenen Kontexten verschiedene Dinge. Wenn wir es an eine Klasse schreiben, signalisiert es dem Computer, dass wir nicht wollen, dass aus dieser Klasse ein Objekt erstellt werden kann. Später werden wir es noch an Methoden schreiben - dort hat es aber eine andere Bedeutung.
 
 ```cs
-// Animal.cs
+// Animals/Animal.cs
 namespace Firststeps.Animals;
 public abstract class Animal //<- hier ist das abstract
 {
