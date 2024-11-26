@@ -27,11 +27,29 @@ Das gleiche, was wir mit `Pikachu` und `Pokemon` gemacht haben, machen wir jetzt
 
 Verschiebe dazu `Attack.cs` zuerst in einen neuen Ordern `Attacks` und passe den Namespace an.
 
-Erstelle anschlißened eine neue Klasse `Donnerblitz` (in einer neuen Datei neben `Attack.cs`), die von `Attack` erbt und den Namen und Schaden bei Objekterstellung automatisch an die Basisklasse übergibt. Folgender Code soll nach deiner Implementierung möglich sein:
+Erstelle anschließened eine neue Klasse `Donnerblitz` (in einer neuen Datei neben `Attack.cs`), die von `Attack` erbt und den Namen und Schaden bei Objekterstellung automatisch an die Basisklasse übergibt. Folgender Code soll nach deiner Implementierung möglich sein:
 
 ```cs
 var donnerblitz = new Donnerblitz();
 Console.WriteLine(donnerblitz.Name + " macht " + donnerblitz.Damage + " Schaden");
 ```
 
-Tausche nun die Objekterstellung der Donnerblitz-Attacke in `Pikachu` (`new Attack("Donnerblitz", 30)`) gegen die neue Klasse aus.
+Die tatsächliche Verwedung der Donnerblitz-Klasse kommt erst im nächsten Kapitel über Polimorphismus.
+
+## 3. Schiggy & Aquaknarre
+
+Mache das gleiche mit Schiggy und Aquaknarre, was du in den letzten beiden Aufgaben mit `Pikachu` und `Donnerblitz` gemacht hast.
+
+Stelle anschließend sicher, dass aus der Klasse `Pokemon` keine Objekte erstellt werden können.
+
+Folgender Code in der `Program.cs` soll nach deiner Implementierung **nicht mehr** ausführbar sein:
+```cs
+Pokemon pikachu = new Pokemon("Pikachu", 5, new Attack("Donnerblitz", 30));
+Pokemon schiggy = new Pokemon("Schiggy", 5, new Attack("Aquaknarre", 20));
+```
+
+Dein Code sollte stattdessen so aussehen:
+```cs
+Pikachu pikachu = new Pikachu(5);
+Schiggy schiggy = new Schiggy(5);
+```
