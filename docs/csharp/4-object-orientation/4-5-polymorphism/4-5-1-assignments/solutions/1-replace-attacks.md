@@ -5,6 +5,7 @@ sidebar_label: 1. Angriffe ersetzen
 
 # 1. Lösung: Angriffe ersetzen
 
+In den Klassen `Pikachu` und `Schiggy` wird beim Aufruf des Basis-Konstruktors ein Angriff (`new Attack(...)`) erstellt. Dieses `Attack`-Objekt muss durch die konkrete Angriffsklasse (`Donnerblitz` für Pikachu, `Aquaknarre` für Schiggy) ausgetauscht werden. Da der Schaden innerhalb der jeweiligen Klasse definiert wird, muss kein Argument beim Erstellen des Angriffs übergeben werden.
 
 ```cs
 using ObjectOrientation.Attacks;
@@ -33,6 +34,8 @@ public class Schiggy : Pokemon
     }
 }
 ```
+
+Um weiterhin zu verhindern, dass direkt Objekte der `Attack`-Klasse erstellt werden, machen wir sie `abstract`.
 
 ```cs
 namespace ObjectOrientation.Attacks;

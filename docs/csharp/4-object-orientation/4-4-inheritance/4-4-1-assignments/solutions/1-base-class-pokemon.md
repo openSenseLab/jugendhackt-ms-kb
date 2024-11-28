@@ -14,9 +14,9 @@ namespace ObjectOrientation.Pokemons;
 
 public class Pikachu : Pokemon
 {
-	public Pikachu(int level)
-		: base("Pikachu", level, new Attack("Donnerblitz", 30))  // hier rufen wir den Konstruktor von 'Pokemon' auf
-	{		
-	}
+    public Pikachu(int level)
+        : base("Pikachu", level, new Attack("Donnerblitz", 30))  // hier rufen wir den Konstruktor von 'Pokemon' auf
+    {
+    }
 }
 ```
