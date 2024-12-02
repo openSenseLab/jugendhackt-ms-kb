@@ -7,7 +7,7 @@ sidebar_label: Aufgaben
 
 Die Aufgaben innerhalb der Objektorientierung werden ab jetzt aufeinander aufbauen. Wir werden zusammen Pokemon modellieren und später gegeneinander kämpfen lassen (zur einfacheren Benutzung werden wir hier und da von den tatsächlichen Pokemon-Regeln abweichen).
 
-Erstelle dir daher am besten ein neues Projekt, indem du VS Code (wie in `1. Erste Schritte` beschrieben) in einem neuen Ordner "Pokemon" öffnest und dort ein neues .net-Projekt erstellst (`dotnet new console --name Pokemon --framework net8.0 --language "C#"`).
+Erstelle dir daher am besten ein neues Projekt, indem du VS Code (wie in `1. Erste Schritte` beschrieben) in einem neuen Ordner "ObjectOrientation" öffnest und dort ein neues .net-Projekt erstellst (`dotnet new console --name ObjectOrientation --framework net8.0 --language "C#"`).
 
 ## 1. Grundstruktur
 
